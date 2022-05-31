@@ -1,0 +1,69 @@
+.header-continer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+
+
+    header {
+      float: left;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .header-inner {
+        float: left;
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        nav {
+          ul {
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                }
+            }
+          }
+        }
+       
+      }
+      form{
+           display: flex;
+            align-items: center;
+        input{
+            background: #F0F0F0;
+             border: none;
+              width: 300px;
+              height: 42px;
+              border-radius: 6px;
+        }
+        .lang-btn{
+            float: left;
+            button{
+                border: none;
+                 background: none;
+            }
+        }
+        .Login-btn{
+            float: left;
+            button{
+                border: 2px solid #149818;
+            color: #149818;
+            width: 120px;
+            height: 42px;
+             border-radius: 6px;
+            }
+        }
+
+        .empl-btn{
+            border: none;
+            background: none;
+             font-size: 16px;
+        }
+    }
+    }
+  }
