@@ -1,0 +1,27 @@
+.filter-box {
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+   border-bottom:1px solid #C8C8C8 ;
+   padding-bottom: 5px;
+
+  .filter-box-inner {
+
+    float: left;
+    width: calc(100% - 100px);
+
+    mat-select {
+      background: #F0F0F0;
+    }
+  }
+
+  .filter-btn {
+    float: right;
+    width: 100px;
+     height: 38px;
+     color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+  }
+}

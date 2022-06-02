@@ -1,69 +1,120 @@
 .header-continer-inner {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1700px;
+  margin: 0 auto;
+  width: 94%;
+  box-shadow: 0px 3px 6px rgba(0,0,0,0.1);
+
+
+  header {
+    float: left;
     width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
 
-
-    header {
+    .header-inner {
       float: left;
-      width: 100%;
-      height: 100px;
+      width: 50%;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
 
-      .header-inner {
-        float: left;
-        width: 50%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
+      nav {
+        ul {
+          list-style: none;
+          display: inline-flex;
 
-        nav {
-          ul {
-            list-style: none;
-            li{
-                a{
-                    text-decoration: none;
-                }
+          li {
+            padding: 0 16px;
+
+            &.active {
+              a{
+              color: #0D6510;
+              border-bottom: 4px solid #149818;
+              }
+            }
+
+            a {
+              text-decoration: none;
+              color: #969696;
+              padding-bottom: 28px;
+               text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px;
+          
             }
           }
         }
-       
       }
-      form{
-           display: flex;
-            align-items: center;
-        input{
-            background: #F0F0F0;
-             border: none;
-              width: 300px;
-              height: 42px;
-              border-radius: 6px;
-        }
-        .lang-btn{
-            float: left;
-            button{
-                border: none;
-                 background: none;
-            }
-        }
-        .Login-btn{
-            float: left;
-            button{
-                border: 2px solid #149818;
+
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+
+      input {
+        background: url(../../../assets/search-icon.svg),#F0F0F0;
+        border: none;
+        width: 270px;
+        height: 38px;
+        border-radius: 6px;
+         background-repeat: no-repeat;
+         background-position: left 16px center;
+         padding: 0 10px 0 45px;
+         color: rgba(0,0,0,0.5);
+
+      }
+
+      .lang-btn {
+        float: left;
+        margin: 0 30px;
+        display: flex;
+
+        button {
+          border: none;
+          background: none;
+          color: #969696;
+          font-size: 14px;
+          font-weight: 600;
+
+          &.active{
             color: #149818;
-            width: 120px;
-            height: 42px;
-             border-radius: 6px;
-            }
+          }
+           
+
+          &:first-child{
+            border-right: 2px solid rgba(0,0,0,0.5);
+          }
         }
 
-        .empl-btn{
-            border: none;
-            background: none;
-             font-size: 16px;
+      }
+
+      .Login-btn {
+        float: left;
+
+        button {
+          border: 2px solid #149818;
+          color: #149818;
+          width: 100px;
+          height: 38px;
+          border-radius: 6px;
+          background: none;
+          font-weight: 600;
         }
-    }
+      }
+
+      .empl-btn {
+        border: none;
+        background: none;
+        font-size: 14px;
+        color: #149818;
+        font-weight: 600;
+        margin-left: 30px;
+         width: 125px;
+      }
     }
   }
+}
