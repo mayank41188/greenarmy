@@ -9,4 +9,71 @@ body {
   width: 100%;
 
  
+.job-box {
+    float: left;
+    .job-box-top {
+        float: left;
+        width: 100%;
+        background: #DCDCDC;
+        min-height: 160px;
+        border-radius: 6px 6px 0 0;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: relative;
+         span{
+             width: 60px;
+             height: 60px;
+             border-radius: 50%;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             position: absolute;
+             background: #DCDCDC;
+             box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+              right: 20px;
+               bottom: -20px;
+         }
+    }
+
+    .job-title{
+        float: left;
+        width: 100%;
+        h4{
+            float: left;
+             width: 100%;
+              font-size: 20px;
+              color: var(--primary-button-color);
+              font-weight: 600;
+        }
+        .co-na{
+            float: left;
+             width: 100%;
+              display: flex;
+              justify-content: space-between;
+               span{
+                   color: #969696;
+                   font-size: 13px;
+               }
+        }
+    }
+
+    .dt-ti{
+        float: left;
+         width: 100%;
+          display: flex;
+          justify-content: space-between;
+          span{
+              color: #969696;
+               font-size: 13px;
+          }
+
+    }
+
+    .dis-cr{
+        float: left;
+         width: 100%;
+         p{
+             color: #969696;
+         }
 }
