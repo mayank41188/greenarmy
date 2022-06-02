@@ -5,6 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './home/landing-page/landing-page.component';
 import { SharedModule } from './shared/shared.module';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 
@@ -19,6 +24,11 @@ import { SharedModule } from './shared/shared.module';
     HomeModule,
     AppRoutingModule,
     SharedModule,
+    MatInputModule,
+    MatSelectModule,
+    MatExpansionModule,
+    MatButtonModule,
+    MatFormFieldModule
 
 
   ],
