@@ -10,6 +10,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'; 
 
 
 
@@ -28,7 +29,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatSelectModule,
     MatExpansionModule,
     MatButtonModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    BrowserAnimationsModule
 
 
   ],
