@@ -1,4 +1,4 @@
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";  
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 
 
@@ -51,6 +51,11 @@ body {
 
     }
 
+    &.br-4 {
+
+      background: #EBEBEB;
+    }
+
     &.br-3 {
       background: url(./assets/Banner-2.jpg);
       background-repeat: no-repeat;
@@ -65,6 +70,12 @@ body {
       width: 70%;
       margin: 0 auto;
       padding: 80px 0;
+
+      &.footer-cen {
+
+        display: flex;
+        padding: 50px 0 !important;
+      }
 
       h1 {
         color: #0D6510;
@@ -233,6 +244,10 @@ body {
   align-items: center;
   justify-content: left;
   border-radius: 6px;
+}
+
+.mr-30 {
+  margin-right: 30px;
 }
 
 
@@ -481,6 +496,211 @@ mat-accordion {
   margin-top: 40px;
 }
 
-.float-right{
+.float-right {
   float: right !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+header{
+
+  flex-flow:column;
+  height: auto !important;
+  margin-top: 12px;
+}
+
+form{
+  flex-flow:column;
+
+}
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+  .continer{
+    .full-width{
+      .continer-inner{
+
+        width:90% !important;
+        padding: 40px 0;
+
+        .main-block{
+          display: flex;
+          flex-flow: column;
+          &:nth-child(even)
+          {
+            flex-flow: column-reverse;
+
+
+          }
+          &.pv-30{
+            padding: 0 !important;
+          }
+        }
+        
+      }
+
+    }
+
+  }  
+
+  footer{
+
+    .footer{
+
+      flex-flow: column;
+      text-align: center;
+      width: 100%;
+      .footer-inner{
+        width: 100% !important;
+        padding: 0 !important;
+        .subs-box{
+
+          float: none !important;
+          width: 300px !important;
+          margin: 0 auto;
+        }
+        ul{
+          width: 100%;
+          li{
+            text-align: center;
+            a{
+              float: none !important;
+            }
+          }
+        }
+        &:last-child{
+
+          justify-content: center;
+    margin-top: 20px;
+        }
+      }
+    }
+  }
+  .header-continer-inner{
+
+    width: 100% !important;
+  }
+
+  header{
+
+    flex-flow:column;
+    height: auto !important;
+    margin-top: 12px;
+  }
+  
+  form{
+    flex-flow:column;
+  
+  }
+
+
+  .header-inner{
+width: 100% !important;
+flex-flow: column;
+  nav {
+    width: 100%;
+    text-align: center;
+    &:hover ul{
+      display: block !important;
+    }
+    ul{
+      display: none !important;
+      padding: 0;
+      width: 100%;
+      float: left;
+      background: #EBEBEB;
+      margin-bottom: 0;
+      li{
+        width: 100%;
+        float: left;
+        padding: 0 !important;
+        border-bottom: 1px solid #C8C8C8;
+        a{
+          float: left;
+           width: 100%;
+           padding: 5px 0 !important;
+            border: none !important;
+          
+
+        }
+      }
+    }
+  
+  }
+
+}
+form{
+  margin-top: 20px;
+.for-responsive-only{
+  justify-content: center;
+  margin: 20px 0;
+
+.lang-btn{
+  margin: 0 10px !important;
+
+}
+.empl-btn{
+
+  margin-left: 10px !important;
+}
+
+}
+
+}
+
+.left-box,.right-box{
+
+  width: 100% !important;
+  text-align: center;
+
+  &.mr-20{
+    width: 100% !important;
+    margin: 0 !important;
+
+  }
+
+  &.ml-20{
+    width: 100% !important;
+    margin: 0 !important;
+
+  }
+}
+
+.job-box-main{
+
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+.btn-block{
+  button {
+    width: 120px;
+  }
+}
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+
+
+
 }

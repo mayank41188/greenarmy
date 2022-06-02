@@ -1,16 +1,30 @@
 footer {
+  float: left;
+  width: 100%;
   .footer {
     float: left;
     display: flex;
 
     .footer-inner {
       float: left;
+      padding: 0 25px;
+
+      &:last-child{
+
+        display: flex;
+        align-self: flex-end;
+      }
+      &:nth-child(2){
+        width: 250px;
+      }
 
       label {
         color: #969696;
         font-size: 11px;
         text-transform: uppercase;
         margin-bottom: 10px;
+        float: left;
+        width: 100%;
       }
 
       ul {
@@ -33,6 +47,39 @@ footer {
               font-size: 14px;
           }
         }
+      }
+
+      p{
+
+        color: #969696;
+         font-size: 11px;
+      }
+
+      .subs-box{
+
+        float: left;
+         width: 100%;
+         input{
+           height: 38px;
+            width: 200px;
+            float: left;
+             background: #F0F0F0;
+             border-radius: 6px 0 0 6px;
+             border: none;
+             color: #969696;
+             padding: 0 16px;
+         }
+
+         button{
+           background: #149818;
+           color: #fff;
+           font-size: 14px;
+           font-weight: 600;
+            border: none;
+             height: 38px;
+             border-radius: 0 6px 6px 0;
+             padding: 0 10px;
+         }
       }
 
    
