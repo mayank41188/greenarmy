@@ -1,0 +1,45 @@
+footer {
+  .footer {
+    float: left;
+    display: flex;
+
+    .footer-inner {
+      float: left;
+
+      label {
+        color: #969696;
+        font-size: 11px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      ul {
+
+        list-style: none;
+        float: left;
+        margin: 0;
+        padding: 0;
+
+        li {
+          float: left;
+          width: 100%;
+          margin-bottom: 15px;
+     
+
+          a {
+            float: left;
+            text-decoration: none;
+             color: #1E1E1E;
+              font-size: 14px;
+          }
+        }
+      }
+
+      p{
+
+
+        
+      }
+    }
+  }
+}
