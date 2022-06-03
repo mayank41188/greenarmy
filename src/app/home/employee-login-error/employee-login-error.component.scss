@@ -1,40 +1,36 @@
+app-header{
+    opacity: 0.2;
+}
 .box {
     background: #ffffff;
-    padding: 20px;
     border-radius: 10px;
     margin: 0 auto;
     width: 100%;
     max-width: 500px;
 }
 .br-2{
-    padding: 120px;
+    padding: 95px;
 }
 
 .continer{
     text-align: center;
+    .full-width{
+        float: none;
+    }
     h1{
         font-weight: 600;
+        margin: 15px 0;
     }
     p{
         font-size: 14px;
         color: #969696;
-        margin: 0 55px;
-    }
-    input {
-        font-size: 16px;
-        background: #EDEDED;
-        height: 50px;
-        border: none;
-        padding: 0 30px;
-        border-radius: 10px;
+        margin: 0 auto;
+        max-width: 250px;
         width: 100%;
-        max-width: 350px;
-        text-align: center;
-        margin: 10px 0 20px;
     }
     button {
         width: 100%;
-        max-width: 350px;
+        max-width: 150px;
         border: none;
         height: 50px;
         color: #fff;
@@ -46,5 +42,12 @@
     .not-receive {
         color: #8F9091;
         font-size: 16px;
+    }
+    .box-logo{
+        border-bottom: 1px solid #CBD0D3;
+        padding: 20px;
+    }
+    .error{
+        padding: 60px 0;
     }
 }

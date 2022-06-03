@@ -6,6 +6,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeLoginOtpComponent } from './employee-login-otp/employee-login-otp.component';
 import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
+import { EmployeeLoginErrorComponent } from './employee-login-error/employee-login-error.component';
+import { EmployeeSignupComponent } from './employee-signup/employee-signup.component';
+import { EmployeeSignupOtpComponent } from './employee-signup-otp/employee-signup-otp.component';
 
 const routes: Routes = [
   {
@@ -24,10 +27,22 @@ const routes: Routes = [
     path: 'employee',
     component: EmployeeProfileComponent,
   },
+  {
+    path: 'employeeLoginError',
+    component: EmployeeLoginErrorComponent,
+  },
+  {
+    path: 'employeeSignup',
+    component: EmployeeSignupComponent,
+  },
+  {
+    path: 'employeeSignupOtp',
+    component: EmployeeSignupOtpComponent,
+  },
 ];
 
 @NgModule({
-  declarations: [LandingPageComponent, EmployeeProfileComponent, EmployeeLoginComponent, EmployeeLoginOtpComponent],
+  declarations: [LandingPageComponent, EmployeeProfileComponent, EmployeeLoginComponent, EmployeeLoginOtpComponent, EmployeeLoginErrorComponent, EmployeeSignupComponent, EmployeeSignupOtpComponent],
   imports: [CommonModule, SharedModule, RouterModule.forChild(routes)],
 })
 export class HomeModule {}
