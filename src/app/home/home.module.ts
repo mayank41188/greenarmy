@@ -27,7 +27,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [LandingPageComponent, EmployeeLoginComponent, EmployeeLoginOtpComponent],
+  declarations: [LandingPageComponent, EmployeeProfileComponent, EmployeeLoginComponent, EmployeeLoginOtpComponent],
   imports: [CommonModule, SharedModule, RouterModule.forChild(routes)],
 })
 export class HomeModule {}
