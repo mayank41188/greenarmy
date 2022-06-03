@@ -104,7 +104,7 @@
       <div class="filter-box">
         <form>
           <div class="filter-box-inner">
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="fill" class="half-width">
               <mat-select matInput name="" placeholder="Select Location">
                 <mat-option value="1">Option 1</mat-option>
                 <mat-option value="2">Option 2</mat-option>
@@ -112,8 +112,8 @@
               </mat-select>
             </mat-form-field>
 
-            <mat-form-field appearance="fill">
-              <mat-select matInput name="" placeholder="Select State">
+            <mat-form-field appearance="fill" class="half-width">
+              <mat-select matInput name="" placeholder="Select Salary">
                 <mat-option>None</mat-option>
                 <mat-option value="option1">Option 1</mat-option>
                 <mat-option value="option2">Option 2</mat-option>
@@ -121,11 +121,11 @@
               </mat-select>
             </mat-form-field>
 
-            <mat-form-field appearance="fill">
+            <mat-form-field appearance="fill" class="half-width">
               <mat-select
                 matInput
                 name=""
-                placeholder="Select target community"
+                placeholder="Select Job Duration"
               >
                 <mat-option>None</mat-option>
                 <mat-option value="option1">Option 1</mat-option>
@@ -134,8 +134,8 @@
               </mat-select>
             </mat-form-field>
 
-            <mat-form-field appearance="fill">
-              <mat-select matInput name="" placeholder="Select category">
+            <mat-form-field appearance="fill" class="half-width">
+              <mat-select matInput name="" placeholder="Select Company  ">
                 <mat-option>None</mat-option>
                 <mat-option value="option1">Option 1</mat-option>
                 <mat-option value="option2">Option 2</mat-option>
@@ -446,7 +446,7 @@
 <div class="continer">
   <div class="full-width br-2">
     <div class="continer-inner">
-      <h1>Discover Jobs On Green Army</h1>
+      <h1>Frequently Asked Questions</h1>
       <mat-accordion>
         <mat-expansion-panel>
           <mat-expansion-panel-header>
@@ -510,7 +510,7 @@
 
 <div class="continer">
   <div class="full-width">
-    <div class="continer-inner">
+    <div class="continer-inner flex flex-col">
       <h1>Contact Us</h1>
       <p>
         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
@@ -520,57 +520,56 @@
       <div class="form-box">
         <form>
           <div class="row">
-            <div class="form-field">
+            <div class="form-field width-one-third">
               <mat-label>First Name <span>*</span></mat-label>
               <mat-form-field class="example-full-width" appearance="fill">
                 <input
                   matInput
                   type="text"
-                  placeholder="Ex. Pizza"
-                  value="Sushi"
-                  name=""
+                  placeholder="First Name"
+                
                 />
               </mat-form-field>
             </div>
-            <div class="form-field">
+            <div class="form-field width-one-third">
               <mat-label>Last Name <span>*</span></mat-label>
               <mat-form-field class="example-full-width" appearance="fill">
                 <input
                   matInput
                   type="text"
-                  placeholder="Ex. Pizza"
-                  value="Sushi"
-                  name=""
+                  placeholder="Last Name"
+                
                 />
               </mat-form-field>
             </div>
-            <div class="form-field">
+            <div class="form-field width-one-third">
               <mat-label>Email Address <span>*</span></mat-label>
               <mat-form-field class="example-full-width" appearance="fill">
                 <input
                   matInput
                   type="email"
-                  placeholder="Ex. Pizza"
-                  value="Sushi"
-                  name=""
+                  placeholder="Email Address"
+               
                 />
               </mat-form-field>
             </div>
           </div>
 
           <div class="row">
-            <div class="form-field">
+            <div class="form-field width-full select-box">
               <mat-label>Subject <span>*</span></mat-label>
               <mat-form-field class="example-full-width" appearance="fill">
-                <mat-select matInput name="" placholder="Select A Subject">
-                  <mat-option></mat-option>
+                <mat-select matInput  placeholder="Select A Subject">
+                  <mat-option value="1">one</mat-option>
+                  <mat-option value="2">one</mat-option>
+                  <mat-option value="3">one</mat-option>
                 </mat-select>
               </mat-form-field>
             </div>
           </div>
 
           <div class="row">
-            <div class="form-field">
+            <div class="form-field width-full textarea-box">
               <mat-label>Subject <span>*</span></mat-label>
               <mat-form-field class="example-full-width" appearance="fill">
                 <textarea
