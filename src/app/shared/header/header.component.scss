@@ -22,6 +22,19 @@
       align-items: center;
 
       nav {
+
+
+        button{
+          background: none;
+          border: none;
+          position: absolute;
+          left: 0;
+          top: 7px;
+          svg{
+            width: 30px;
+          }
+        }
+
         ul {
           list-style: none;
           display: inline-flex;
@@ -68,6 +81,11 @@
 
       }
 
+      .for-responsive-only{
+
+        display: flex;
+        align-items: center;
+
       .lang-btn {
         float: left;
         margin: 0 30px;
@@ -89,6 +107,8 @@
             border-right: 2px solid rgba(0,0,0,0.5);
           }
         }
+
+      }
 
       }
 
