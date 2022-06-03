@@ -37,6 +37,7 @@ body {
   .full-width {
     float: left;
     width: 100%;
+  
 
 
     &.gr-1 {
@@ -58,6 +59,14 @@ body {
 
     &.br-3 {
       background: url(./assets/Banner-2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: left center;
+
+    }
+    &.br-5{
+
+      background: url(./assets/welcome-bg.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: left center;
@@ -163,6 +172,29 @@ body {
   background: var(--secondary-button-color);
 }
 
+.thred-btn{
+
+  background: none;
+   border: 1px solid #707070 !important;
+    border-radius: 6px !important;
+    color: #969696;
+     font-size: 11px;
+      font-weight: 600;
+      line-height: 25px !important;
+}
+
+.cancel-btn{
+  height: 38px;
+  border: 2px solid #969696 !important;
+  color: #969696;
+  border-radius: 6px;
+}
+
+.width-100px{
+
+  width: 100px;
+}
+
 
 .btn-block {
 
@@ -205,6 +237,11 @@ body {
   justify-content: center;
 }
 
+.justify-space-between{
+
+  justify-content: space-between;
+}
+
 .align-center {
 
   align-items: center;
@@ -233,6 +270,16 @@ body {
 
 .pv-30 {
   padding: 30px 0;
+}
+.pv-40 {
+  padding: 40px 0 !important;
+}
+
+.pv-0{
+  padding: 0 !important;
+}
+.pb-80{
+  padding-bottom: 80px !important;
 }
 
 
@@ -557,6 +604,45 @@ mat-accordion {
    }
 }
 
+mat-label{
+  width: 100%;
+  float: left;
+   color: #202124;
+   margin-bottom: 5px;
+   font-weight: 600;
+   font-size: 14px;
+   span{
+     color: #DE0000;
+   }
+}
+
+.wi-half{
+
+  width:calc(50% - 20px);
+  margin-right: 20px;
+   float: left;
+}
+
+.wi-third-forth{
+
+  float: left;
+  width: calc(75% - 25px);
+  margin-right: 25px;
+  mat-label{
+    width: 100%;
+    float: left;
+     color: #202124;
+     margin-bottom: 5px;
+     font-weight: 600;
+     font-size: 14px;
+     span{
+       color: #DE0000;
+     }
+  }
+
+
+}
+
 .width-full{
   float: left;
   width: calc(100% - 25px);
@@ -571,6 +657,16 @@ mat-accordion {
      span{
        color: #DE0000;
      }
+    
+  }
+
+  &.form-field-half{
+    mat-form-field{
+     float: left;
+     width: calc(50% - 25px);
+     margin-right: 25px;
+
+    }
   }
 
 
@@ -637,6 +733,82 @@ mat-form-field{
 
     
   }
+
+}
+
+.welcome-box{
+  float: left;
+   width: 100%;
+
+   h2{
+     color: #0D6510;
+      font-size: 26px;
+       font-weight: 600;
+        margin: 0;
+      span{
+        color: #1E1E1E;
+
+      }
+   }
+
+ 
+}
+
+.certifi-btn{
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  width: 175px;
+}
+
+.mat-select-arrow-wrapper{
+  transform: inherit !important;
+}
+
+.upload-box{
+  position: relative;
+  .upload-btn{
+    position: absolute;
+    right: -15px;
+    top: -12px;
+    padding: 0;
+    min-width: 50px;
+  }
+}
+
+.mat-checkbox-label{
+  color: #202124;
+  font-size: 14px;
+   font-weight: 600;
+
+}
+
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: #fff !important;
+  border: 2px solid #C0C2C3;
+}
+
+::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+  background-color: #fff !important;
+  border: 2px solid #C0C2C3;
+}
+
+::ng-deep .mat-checkbox-ripple .mat-ripple-element {
+  background-color: #149818 !important;
+}
+
+::ng-deep .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: #fff !important;
+  border: 2px solid #C0C2C3;
+}
+
+.mat-checkbox-checkmark-path {
+  stroke: #37C437 !important;
+}
+
+.mat-checkbox-frame{
+  border: 2px solid #C0C2C3;
 
 }
 

@@ -5,6 +5,7 @@ import { SharedModule } from '../shared/shared.module';
 import { RouterModule, Routes } from '@angular/router';
 import { EmployeeLoginComponent } from './employee-login/employee-login.component';
 import { EmployeeLoginOtpComponent } from './employee-login-otp/employee-login-otp.component';
+import { EmployeeProfileComponent } from './employee-profile/employee-profile.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,10 @@ const routes: Routes = [
   {
     path: 'employeeLoginOtp',
     component: EmployeeLoginOtpComponent,
+  },
+  {
+    path: 'employee',
+    component: EmployeeProfileComponent,
   },
 ];
 
