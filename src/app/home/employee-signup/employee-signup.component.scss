@@ -1,0 +1,22 @@
+.form-box {
+    float: left;
+    width: 75%;
+}
+.check-wrap input {
+    position: relative;
+    height: 20px;
+    width: 20px;
+}
+.label{
+    font-size: 14px;
+    margin-left: 10px;
+    span{
+        border-bottom: 1px solid #000;
+    }
+}
+.btn-block{
+        padding-top: 20px;
+        button{
+            width: auto;
+        }
+}
